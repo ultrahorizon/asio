@@ -66,7 +66,8 @@ public:
   {
     // Default constructor.
     implementation_type()
-      : protocol_(endpoint_type().protocol())
+      : base_implementation_type{},
+        protocol_(endpoint_type().protocol())
     {
     }
 
